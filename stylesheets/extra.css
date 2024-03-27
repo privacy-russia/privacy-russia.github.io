@@ -1,0 +1,15 @@
+p {
+  font-size: 125%;
+}
+
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color:        hsl(208, 90%, 50%);
+  --md-primary-fg-color--light: hsl(208, 90%, 74%);
+  --md-primary-fg-color--dark:  hsl(208, 90%, 25%);
+}
+
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color:        hsl(208, 60%, 40%);
+  --md-primary-fg-color--light: hsl(208, 60%, 74%);
+  --md-primary-fg-color--dark:  hsl(208, 60%, 25%);
+}
