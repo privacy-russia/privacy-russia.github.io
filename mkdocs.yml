@@ -1,0 +1,93 @@
+# Информация о сайте
+site_name: Privacy Russia
+site_url: https://privacy-russia.github.io
+copyright: Copyright &copy; 2024 Privacy Russia
+
+# Репозиторий гитхаб
+repo_name: Github
+repo_url: https://github.com/privacy-russia/privacy-russia.github.io
+
+# Конфигурация
+theme: 
+  logo: assets/icons/site-icons/privacy-russia.svg
+  favicon: assets/icons/site-icons/privacy-russia.svg
+  language: ru
+  name: material
+  custom_dir: overrides
+
+  palette: 
+    # Palette toggle for light mode
+    - scheme: default
+      accent: light-blue
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Включить тёмную тему
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Отключить тёмную тему
+
+  features:
+    - navigation.sections
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.indexes
+    - navigation.top
+    - content.tabs.link
+  icon:
+    repo: fontawesome/brands/github
+    annotation: material/chevron-right-circle
+
+plugins:
+  - search
+  - git-revision-date-localized:
+      locale: ru
+      enable_creation_date: false
+
+extra:
+  generator: false
+  social: 
+    - icon: fontawesome/brands/telegram
+      link: https://t.me/kust_security
+      name: Наш телеграм
+
+markdown_extensions:
+  - toc:
+      slugify: !!python/object/apply:pymdownx.slugs.slugify {kwds: {case: lower}}
+      permalink: false
+      toc_depth: 3
+  - attr_list   # Поддержка картинок
+  - md_in_html  # Поддержка картинок
+  - abbr
+  - admonition  
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+extra_css:
+  - stylesheets/extra.css
+
+# Структура сайта
+nav:
+  - Главная: index.md
+  - Рекомендации: 
+    - рекомендации/index.md
+    - Программы:  
+      - Мессенджеры: рекомендации/мессенджеры.md
+      - Браузер: рекомендации/десктопные-браузеры.md
+      - Менеджер паролей: рекомендации/менеджеры-паролей.md
+  - База знаний: 
+    - база-знаний/index.md
+    - база-знаний/2фа.md
+  - Как использовать: 
+    - как-использовать/index.md
+    - Как использовать Signal: как-использовать/signal.md
+
