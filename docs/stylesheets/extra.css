@@ -1,7 +1,3 @@
-p {
-  font-size: 125%;
-}
-
 [data-md-color-scheme="default"] {
   --md-primary-fg-color:        hsl(208, 90%, 50%);
   --md-primary-fg-color--light: hsl(208, 90%, 74%);
@@ -12,4 +8,20 @@ p {
   --md-primary-fg-color:        hsl(208, 60%, 40%);
   --md-primary-fg-color--light: hsl(208, 60%, 74%);
   --md-primary-fg-color--dark:  hsl(208, 60%, 25%);
+}
+
+body {
+  font-size: 100%;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 1.875em;
+}
+
+p {
+  font-size: 1.1em;
 }

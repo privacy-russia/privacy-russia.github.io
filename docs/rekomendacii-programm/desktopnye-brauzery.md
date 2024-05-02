@@ -2,48 +2,71 @@
 icon: simple/googlechrome
 ---
 
-## **Что такое браузер?**
+## Что такое браузер?
 
-## **Почему это важно?**
+Браузерами пользуются все без исключений 
 
-## **Критерии**
+---
 
+## Почему это важно?
+
+почему важно
+
+---
+
+# Критерии
 
 Здесь рекомендованны браузеры для обычного стандартного пользования. Если вам нужна аноноимность и вы хотите скрыть факт посещения некоторых сайтов от государства, то используйте [Tor](https://www.torproject.org/ru/). 
 
-Мы рекомендуем использовать:
+---
 
-- **Mullwad Browser** для регулярного "гугления" информации и браузинга, при котором не нужно входить в личные аккаунты.
+# Можно ли использовать 2 браузера?
 
-- **Firefox/Brave** для сайтов, где нужно логиниться в аккаунты.
+Даже нужно, можно использовать и больше, вас никто ни в чем не ограничивает.
 
-- **Brave** для сайтов, которым требуется движок chromium.
+Стоит сказать пару слов про компартментализацию. В биологии данный термин обозначает разделение процессов в живых организмах по отдельным частям тел этих организмов. Например в вашем теле один орган отвечает за дыхание, второй за питание, третий защищает от внешних воздействий и т.д.
+
+В нашей области компартментализацию можно обьяснить простой поговоркой:
+
+Не клади все яйца в одну корзину.{ font-size: 36 }
+
+Используя 2 браузера вы можете разделить работу и личную жизнь, учебу и онлайн шопинг и т.д.
+
+Один вы будете использовать для ежедневного гугления информации. В нём должна быть включена автоотчистка всех куки-файлов и истории при выходе из браузера. Для компьютеров мы рекомендуем [Mullwad Browser](https://mullvad.net/ru/browser), а для телефонов [DuckDuckGo Browser](https://duckduckgo.com/) 
+
+Второй браузер нужен для сайтов, на которых вы хотите оставаться залогиненными. Наши рекомендации вы найдёте ниже. 
+
+Данный сетап довольно прост в использовании и послужит вам стартовой точкой в улучшении вашей онлайн безопасности.
+
+Помните, что вы всегда можете пойти дальше и настроить разные профили в браузере для различных частей вашей жизни (Банкинг, шопинг, учеба, работа и т.д.). Так вы разделите 
 
 !!! tip "Совет"
     На сайте [privacytests.org](https://privacytests.org/) вы можете посмотреть, как различные браузеры справляются с блокировкой трекеров и отслеживания.
 
-## **Наши рекомендации**
+## Наши рекомендации
 
-### **Brave**
+---
+
+### Brave
 
 !!! recomendation ""
 
-    ![](/assets/icons/recomendations/browsers/brave.svg){ width="100"; align=right  }
+    ![](../assets/icons/recomendations/browsers/brave.svg){ width="100"; align=right  }
     Платформы: :simple-windows: Windows, :simple-linux: Linux, :simple-apple: macOS
 
     Браузер основан на движке chromium, это означает полную совместимость со всеми сайтами в интернете. Имеет встроенный блокировщик рекламы, E2EE синхронизацию закладок, истории и т.д. между браузерами. По умолчанию в нём включены различные крипто-штуки, которые можно отключить, чтобы сделать внешний вид более приятным.
 
-    [:octicons-home-24: Официальный сайт](https://brave.com/ru/){ .md-button .md-button--primary } [Гайд по настройке](/posts/2023/brave-recommended-settings){ .md-button .md-button }
+    [:octicons-home-24: Официальный сайт](https://brave.com/ru/){ .md-button .md-button--primary } [Гайд по настройке](../kak-ispolzovat/signal.md){ .md-button .md-button }
 
 ### **Mullwad Browser** 
 
 !!! recomendation ""
-    ![](/assets/icons/recomendations/browsers/mullvad.svg){ width="100"; align=right  }
+    ![](../assets/icons/recomendations/browsers/mullvad.svg){ width="100"; align=right  }
     Платформы: :simple-windows: Windows, :simple-linux: Linux, :simple-apple: macOS
 
     Mullwad Browser это версия Tor браузера сделанная в коллаборации с разработчиками Tor браузера, но без сети Tor. В Mullwad Browsere сохранены твики и настройки, создающие одинаковый отпечаток браузера для всех пользователей.
 
-    [:octicons-home-24: Официальный сайт](https://mullvad.net/en/browser){ .md-button .md-button--primary }
+    [:octicons-home-24: Официальный сайт](https://mullvad.net/ru/browser){ .md-button .md-button--primary }
 
 !!! warning "Внимание"
 
@@ -52,7 +75,7 @@ icon: simple/googlechrome
 ### **Firefox**
 
 !!! recomendation ""
-    ![](/assets/icons/recomendations/browsers/firefox.svg){ width="100"; align=right  }
+    ![](../assets/icons/recomendations/browsers/firefox.svg){ width="100"; align=right  }
     Платформы: :simple-windows: Windows, :simple-linux: Linux, :simple-apple: macOS
 
     Firefox предоставляет широкий выбор настроек и используется проектом Tor как основа для их браузера. Однако он также критикуется, за плохую изоляцию вкладок и процессов. Также, из-за широкого распространения браузеров на основе chromium, некоторые сайты могут некорректно работать в Firefox.
@@ -96,7 +119,7 @@ icon: simple/googlechrome
 ### **UBlockOrigin**
 
 !!! recomendation ""
-    ![](/assets/icons/recomendations/browsers/ublock.svg){ width="100"; align=right  }
+    ![](../assets/icons/recomendations/browsers/ublock.svg){ width="100"; align=right  }
     Браузеры: firefox, chrome, edge и др.
 
     Пожалуй лучший и самый кастомизируемый блокировщик контента в мире. На их [вики](https://github.com/gorhill/uBlock/wiki) изложена вся информация по настройке и использованию расширения. Мы рекомендуем ознакомиться с [режимами блокировки](https://github.com/gorhill/uBlock/wiki/Blocking-mode) и [динамической фильрацией](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-quick-guide).

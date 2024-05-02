@@ -64,8 +64,8 @@ Signal [не продаёт и не монетизирует](https://signal.org
 ### **Session**
 
 !!! recomendation ""
-    ![](/assets/icons/recomendations/messengers/session-black.svg#only-light){ width="100"; align=right  }
-    ![](/assets/icons/recomendations/messengers/session-white.svg#only-dark){ width="100"; align=right  }
+    ![](../assets/icons/recomendations/messengers/session-black.svg#only-light){ width="100"; align=right  }
+    ![](../assets/icons/recomendations/messengers/session-white.svg#only-dark){ width="100"; align=right  }
     Платформы:   
     :simple-android: Android, :simple-apple: iOS, :simple-windows: Windows, :simple-linux: Linux, :simple-apple: macOS
 

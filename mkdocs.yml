@@ -13,6 +13,8 @@ theme:
   favicon: assets/icons/site-icons/privacy-russia.svg
   language: ru
   name: material
+  font:
+    text: Ubuntu
   custom_dir: overrides
 
   palette: 
@@ -52,25 +54,38 @@ extra:
   generator: false
   social: 
     - icon: fontawesome/brands/telegram
-      link: https://t.me/kust_security
+      link: https://t.me/privacy_russia
       name: Наш телеграм
 
 markdown_extensions:
   - toc:
-      slugify: !!python/object/apply:pymdownx.slugs.slugify {kwds: {case: lower}}
-      permalink: false
-      toc_depth: 3
+     # slugify: !!python/object/apply:pymdownx.slugs.slugify {kwds: {case: lower}}
+      permalink: false 
+      permalink_title: hello
   - attr_list   # Поддержка картинок
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
   - md_in_html  # Поддержка картинок
   - abbr
   - admonition  
   - pymdownx.details
   - pymdownx.superfences
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
 
 extra_css:
   - stylesheets/extra.css
@@ -79,15 +94,14 @@ extra_css:
 nav:
   - Главная: index.md
   - Рекомендации: 
-    - рекомендации/index.md
-    - Программы:  
-      - Мессенджеры: рекомендации/мессенджеры.md
-      - Браузер: рекомендации/десктопные-браузеры.md
-      - Менеджер паролей: рекомендации/менеджеры-паролей.md
-  - База знаний: 
-    - база-знаний/index.md
-    - база-знаний/2фа.md
-  - Как использовать: 
-    - как-использовать/index.md
-    - Как использовать Signal: как-использовать/signal.md
+    - rekomendacii-programm/index.md
+    - Программы:
+      - Менеджер паролей: rekomendacii-programm/menedzhery-paroley.md
+      - 2ФА: rekomendacii-programm/mfa.md  
+      - Мессенджеры: rekomendacii-programm/mesendzhery.md
+      - Браузер: rekomendacii-programm/desktopnye-brauzery.md
 
+  - База знаний: 
+    - baza-znaniy/index.md
+    - baza-znaniy/mfa.md
+    - baza-znaniy/elektronnaya-pochta.md
