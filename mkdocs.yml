@@ -14,7 +14,7 @@ theme:
   language: ru
   name: material
   font:
-    text: Ubuntu
+    text: Roboto
   custom_dir: overrides
 
   palette: 
